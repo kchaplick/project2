@@ -70,7 +70,7 @@ INSERT INTO breeds (breed_name, img) VALUES
     ('american bulldog','https://bowwowinsurance.com.au/wp-content/uploads/2018/11/american-bulldog-700x700.jpg'),
     ('american eskimo dog','https://d17fnq9dkz9hgj.cloudfront.net/breed-uploads/2018/08/american-eskimo-dog-detail.jpg?bust=1535565061&width=355'),
     ('american foxhound','https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13001630/American-Foxhound-On-White-03.jpg'),
-    ('american pit bull terrier','https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/004_American_Pit_Bull_Terrier.jpg/220px-004_American_Pit_Bull_Terrier.jpg'),
+    ('american pit bull terrier','https://vetstreet.brightspotcdn.com/dims4/default/81db931/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F04%2Fa1%2Fb1095a4c4b1f97f6fc3e44a89b67%2Famerican-pit-bull-terrier-ap-utwch7-645sm1416.jpg'),
     ('american staffordshire terrier','https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/07172037/AmStaff.06.jpg')
 --     ,
 --     ('australian cattle dog'),

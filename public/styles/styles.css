@@ -212,3 +212,17 @@ body, html {
       background-image: url(https://photosfine.files.wordpress.com/2012/04/dog-holding-banner-1.jpg);
   }
 }
+
+.imgDiv {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.crop {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}

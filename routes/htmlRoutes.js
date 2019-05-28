@@ -27,8 +27,8 @@ module.exports = function (app) {
   // Load breed results page
   app.get("/breedresults", function (req, res) {
     var breedResults = [];
-    // userId is hard-coded as 3. { userId: 3 }
-    db.BreedMatch.findAll({ where: { userId: 3 } }).then(function (data) {
+    var userId = req.query.user_id
+    db.BreedMatch.findAll({ where: { userId: userId } }).then(function (data) {
       for (var i = 0; i < data.length; i++) {
         breedResults.push(data[i].BreedId)
         console.log("Find breed match result: " + breedResults)

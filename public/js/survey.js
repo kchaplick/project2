@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $("select").formSelect();
 
   // var instance = M.FormSelect.getInstance(elem);
   // instance.getSelectedValues();
 
-  $("#submitSurvey").click(function(event) {
+  $("#submitSurvey").click(function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -42,11 +42,26 @@ $(document).ready(function() {
     $.ajax("/api/survey", {
       type: "POST",
       data: newSurvey
-    }).then(function() {
+    }).then(function () {
       console.log("added new user and survey");
+      goToBreedresult();
       // Reload the page to get the updated list
       // res.redirect("/");
     });
+
+    function goToBreedresult() {
+      var userId;
+      // find the just added data id
+      $.ajax("/api/user", {
+        type: "GET"
+      }).then(function (data) {
+        var justAddedDataIndex = data.length - 1;
+        userId = data[justAddedDataIndex].id;
+        console.log(userId);
+      }).then(function () {
+        window.location.href = "/breedresults/?user_id=" + userId;
+      });
+    }
 
     // for (var i = 0; i < breedResults.length; i++) {
     //   var newData = {
